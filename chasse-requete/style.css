@@ -1,0 +1,15 @@
+:root{
+
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+a{
+    color: orangered;
+}
+a:hover{
+    color: brown;
+}
+a:visited{
+    color: #a52a5f;
+}
