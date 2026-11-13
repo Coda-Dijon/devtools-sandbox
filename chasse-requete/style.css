@@ -1,15 +1,31 @@
-:root{
-
-    font-family: cursive;
+:root {
+    font-family: sans-serif;
     font-size: 1.2rem;
 }
+main{
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-a{
-    color: orangered;
+
+/* Liste de définitions */
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
 }
-a:hover{
-    color: brown;
+
+dt {
+    font-weight: bold;
+    margin-inline-start: 2em;
 }
-a:visited{
-    color: #a52a5f;
+
+dt::after {
+    content: ":";
+}
+
+dd {
+    margin: 0;
+    font-style: italic;
 }

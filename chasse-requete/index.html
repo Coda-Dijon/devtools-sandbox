@@ -3,22 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chasse à la requête</title>
+    <title>Chasse à la requête - Outils dans le navigateur</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-<h1>Chasse à la requête</h1>
-<ol>
-    <li>Ouvre les devtools de votre navigateur (F12)</li>
-    <li>Rends-toi dans l'onglet "Network" (ou "Réseau")</li>
+<main>
+    <!-- Flag : EITPSOZ5R -->
+    <article>
+        <hgroup>
+            <h1>Chasse aux requêtes</h1>
 
-</ol>
+        </hgroup>
 
-<img src="./images/Canard.png" alt="Un canard facétieux avec un chapeau pointu de mage.">
+        <section>
+            <h2>Etudier les requêtes dans l'onglet Réseau</h2>
+            <ol>
+                <li>Ouvre <strong>les devtools</strong>.</li>
+                <li>Rends-toi dans l'onglet <strong>"Network"</strong> (ou "Réseau")</li>
+                <li><strong>Rafraichis la page</strong> et observe ce qui se passe dans l'onglet réseau (n'hésite pas à
+                    cliquer sur les
+                    lignes
+                    comme
+                    `chasse-requete`, `Canard.png`
+                </li>
 
-<img src="./images/Mage.png" alt="Un mage rigolo">
+            </ol>
+            <li>Après avoir cliqué sur une ressource comme `chasse-requete`, regarde l'onglet `Headers`.</li>
+            <p>Pour chaque ressource : `chasse-requete`, `Canard.png`, regarde <strong>l'onglet "Headers"</strong>
+                (En-têtes)</p>
+            <p>
+                Note les informations suivantes: </p>
+            <dl>
+                <dt>État (Status)</dt>
+                <dd>ex. 200</dd>
+                <dt>Name (Fichier)</dt>
+                <dd>ex. /chasse-requete/</dd>
+                <dt>Type</dt>
+                <dd>ex. html (Document), css (Stylesheet), png, js</dd>
+                <dt>Domaine</dt>
+                <dd>ex. foo.bar</dd>
+                <dt>URL de la requête</dt>
+                <dd>ex. https://foo.bar/pikachu.png</dd>
 
-<a href="../">Retour</a>
+            </dl>
+
+        </section>
+
+        <section>
+            <h2>Etudie l'ordre des requêtes</h2>
+            <ol>
+                <li>Rafraichis plusieurs fois la page et note dans quel ordre se font les requêtes</li>
+                <li>Que remarques-tu ?</li>
+                <li>Affiche le code source de la page.</li>
+                <li>Dessine la séquence</li>
+            </ol>
+            <img src="./images/Canard.png" alt="Un canard facétieux avec un chapeau pointu de mage." loading="lazy" width="321" height="401">
+        </section>
+
+        <section>
+            <h2>Ou est le mage ?</h2>
+            <p></p>
+            <ol>
+                <li>Rafraichis plusieurs fois la page et note dans quel ordre se font les requêtes</li>
+                <li>Que remarques-tu ?</li>
+                <li>Affiche le code source de la page.</li>
+                <li>Dessine la séquence</li>
+            </ol>
+
+            <img src="./images/Mage.png" alt="Un mage rigolo" width="321" height="401">
+        </section>
+
+
+
+
+    </article>
+</main>
+<footer>
+    <a href="../">Retour</a>
+    <p>Secrets à débloquer dans cette activité</p>
+    <ul>
+        <li><a href="https://ladigitale.dev/digilock/#/l/97d7fa407ee961be" target="_blank">Secret 1</a></li>
+    </ul>
+</footer>
 
 </body>
 </html>
+
